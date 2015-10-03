@@ -1,7 +1,7 @@
 Submit a question to have others respond with answers.
 <br>
 <ul>
-  {{#each model as |question|}}
+  {{#each model.questions as |question|}}
     {{question-page question=question update="update"}}
   {{/each}}
 </ul>
