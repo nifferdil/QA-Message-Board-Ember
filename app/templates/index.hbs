@@ -1,10 +1,8 @@
-<h1> QA Message Board </h1>
-
 Submit a question to have others respond with answers.
 <br>
 <ul>
   {{#each model as |question|}}
-    {{question-page update="update" question=question}}
+    {{question-page question=question update="update"}}
   {{/each}}
 </ul>
 

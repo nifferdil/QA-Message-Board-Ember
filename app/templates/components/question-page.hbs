@@ -1,4 +1,5 @@
-<li>Question: {{question.question}}<br> Asked by: {{question.author}}<br> Notes: {{question.notes}}</li>
+<li>{{#link-to 'question' question.id}}Question: {{question.question}}<br> Asked by: {{question.author}}<br> Notes: {{question.notes}}{{/link-to}}
 <br>
  {{update-question question=question update="update"}}
 <br>
+</li>
