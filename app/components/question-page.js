@@ -1,10 +1,15 @@
 import Ember from 'ember';
 
 export default Ember.Component.extend({
-  updateQuestionForm: false,
+
+  model() {
+    return { cakes: this.store.findAll('rental'),
+    answers: this.store.findAll('answer') };
+  },
+
   actions: {
-    update(question, params) {
-     this.sendAction('update', question, params);
-   }
+    update(rental, params) {
+      this.sendAction('update', question, params);
+    }
   }
 });

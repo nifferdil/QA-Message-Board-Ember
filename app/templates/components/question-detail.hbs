@@ -1,13 +1,3 @@
 <h3>Asked by: {{question.author}}</h3> <br>
 See notes: {{question.notes}} <br>
 <hr>
-<h2> Anwers: </h2>
-
-<ul>
-  {{#each model.answers as |answer|}}
-  <li>{{#link-to 'answer' answer.id}}{{answer.content}}{{/link-to}}</li>
-  {{/each}}
-
-  {{new-answer saveAnswer="saveAnswer"}}
-</ul>
-<br>
