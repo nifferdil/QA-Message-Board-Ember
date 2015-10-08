@@ -4,20 +4,20 @@
   <form>
     <div class="form-group">
       <label for="question">Question: </label>
-      {{input value=question id="question" placeholder=question.question}}
+      {{input value=question id="question" placeholder=model.question}}
     </div>
   <br>
     <div class="form-group">
       <label for="author">Author: </label>
-      {{input value=author id="author" placeholder=question.author}}
+      {{input value=author id="author" placeholder=model.author}}
     </div>
   <br>
     <div class="form-group">
       <label for="notes">Notes: </label>
-      {{input value=notes id="notes" placeholder=question.notes}}
+      {{input value=notes id="notes" placeholder=model.notes}}
     </div>
     <br>
-    <button {{action 'update' question}}>Save</button>
+    <button {{action 'update' model}}>Save</button>
   </form>
 </div>
 {{else}}

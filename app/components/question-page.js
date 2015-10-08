@@ -3,7 +3,7 @@ import Ember from 'ember';
 export default Ember.Component.extend({
 
   model() {
-    return { cakes: this.store.findAll('rental'),
+    return { questions: this.store.findAll('question'),
     answers: this.store.findAll('answer') };
   },
 
