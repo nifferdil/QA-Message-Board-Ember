@@ -1,5 +1,5 @@
 {{#if updateQuestionForm}}
-  <h4>Update {{question.author}}'s question: {{question.question}}</h4>
+  <h4>Update {{model.author}}'s question:</h4>
 <div>
   <form>
     <div class="form-group">
@@ -21,5 +21,5 @@
   </form>
 </div>
 {{else}}
-    <button {{action 'updateQuestionForm'}}>Update Question</button>
+    <button class="btn btn-primary"{{action 'updateQuestionForm'}}>Update Question</button>
 {{/if}}
